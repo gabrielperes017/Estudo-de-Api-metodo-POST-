@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Posts</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <div class="coluna-esquerda">
+      <h1>Posts</h1>
+      <div id="erro"></div>
+
+      <h2>Novo Post</h2>
+      <form id="form-post">
+        <input type="text" id="titulo" placeholder="Título" required>
+        <textarea id="corpo" placeholder="Corpo do post" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+
+    <div class="coluna-direita">
+      <h2>Últimos posts enviados</h2>
+      <div id="posts"></div>
+    </div>
+    <div class="assinatura">
+  
+  <h2>Quem desenvolveu</h2>
+  <p>Este projeto foi desenvolvido por Gabriel Peres RA:60005556.</p>
+  <h3>Duvidas:</h3>
+  <p>Eu crie uma array para armazenar os posts e serem apresentados no campo da direita ok
+    porem com um ?_limit=5 no final da url da api, ele so mostra os 5 ultimos posts enviados,
+     porem se eu enviar mais de 5 posts, ele fica armazenado no http://localhost:3001/posts como eu consigo impedir de ser enviado a esta rota acima da quantidade permitida?? </p>
+
+  </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.2/axios.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
